@@ -1,0 +1,34 @@
+public class Main {
+  
+  public static void main(String[] args) {
+    
+    // primera parte del ejercicio:
+
+    suma(10, 20, 30);
+
+    //segunda parte del ejercicio:
+
+    Coche miCoche = new Coche();
+    miCoche.MasPuertas();
+    System.out.println("la cantidad de puertas de mi coche es: " + miCoche.puertas);
+
+  }
+
+  public static int suma(int a, int b, int c) {
+    int resultado;
+    resultado = a + b + c;
+    System.out.println("el valor de tu suma es: " + resultado);
+  	return resultado;
+  }
+
+	public static class Coche {
+
+  	public int puertas = 4;
+
+  	public void MasPuertas() {
+  		this.puertas++;
+  	}
+  }
+
+}
+
